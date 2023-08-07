@@ -4,6 +4,49 @@ import Image from 'next/image'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon, FingerPrintIcon } from '@heroicons/react/24/solid'
 import { StarIcon, ShieldCheckIcon, RocketLaunchIcon, BellAlertIcon, BookOpenIcon } from '@heroicons/react/24/outline'
+import { Variants, motion } from "framer-motion"
+
+const leftFadeInVariants: Variants = {
+  hide: {
+      opacity: 0,
+      x: -500,
+  },
+  show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+          duration: 0.8,
+      },
+  },
+};
+
+const rightFadeInVariants: Variants = {
+  hide: {
+      opacity: 0,
+      x: 500,
+  },
+  show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+          duration: 0.8,
+      },
+  },
+};
+
+const bottomFadeInVariants: Variants = {
+  hide: {
+      opacity: 0,
+      y: 500  ,
+  },
+  show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+          duration: 1.0,
+      },
+  },
+};
 
 export default function Home() {
   const CONTRACT = process.env.CONTRACT ?? "0x0000000"
@@ -321,7 +364,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-6 md:px-12 body-block">
+      <motion.div 
+        className="flex flex-col px-6 md:px-12 body-block"
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={leftFadeInVariants}
+      >
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
           <p className="text-4xl">Features</p>
           <span className="text-xl">Our trading bot has a comprehensive suite of features designed to help you win. All free-to-use.</span>
@@ -360,13 +409,19 @@ export default function Home() {
             <span className="mt-1 text-base">Trade like the pros, front-run & replicate their wins.</span>
           </div>
         </div>
-      </div>
-      <div className="px-6 md:px-12 body-block">
+      </motion.div>
+      <motion.div 
+        className="px-6 md:px-12 body-block"
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={rightFadeInVariants}
+      >
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
           <p className="text-4xl font-semibold">NFT Ownership = WAGMI</p>
-          <span className="text-xl">Huge rewards are coming for Raca Golden NFT Holders</span>
+          <span className="text-base">Huge rewards are coming for Raca Golden NFT Holders</span>
         </div>
-        <div className="flex flex-col gap-y-8 justify-between mt-16 md:flex-row md:gap-y-0 md:mt-32">
+        <div className="flex flex-col gap-y-8 justify-between mt-10 md:flex-row md:gap-y-0 md:mt-20">
           <div className="flex flex-col gap-y-2">
             <p className="text-xl font-semibold">Revenue Sharing</p>
             <span className="text-base">Revenue from transaction fee, NFT sales will weekly be shared & send directly<br />to Golden NFT holder wallets.</span>
@@ -379,8 +434,14 @@ export default function Home() {
         <div className="mt-10">
           <Image src="/media/nft-rarity-ranking.jpg" alt="" loading="lazy" width="2048" height="1025" decoding="async" style={{ color: "transparent" }} />
         </div>
-      </div>
-      <div className="flex flex-col mt-20">
+      </motion.div>
+      <motion.div 
+        className="flex flex-col mt-20"
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={bottomFadeInVariants}
+      >
         <p className="mx-auto mb-2 text-3xl text-mochi">Community Expectation</p>
         <div className="body-block px-6 md:px-12">
           <div className="relative bg-white rounded-xl shadow-md">
@@ -402,7 +463,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="mt-20">
         <div className="px-6 md:px-12 body-block">
           <div style={{ backgroundImage: "url(/dot-bg.png), linear-gradient(90deg, #FCBCC8 0%, #D3A7F3 100%)", backgroundSize: "cover", backgroundBlendMode: "overlay", height: "300px" }} className="flex relative flex-col justify-center items-center p-10 rounded-lg">

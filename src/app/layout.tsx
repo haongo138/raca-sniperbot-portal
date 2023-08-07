@@ -7,8 +7,9 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Raca Sniper Bot',
+  title: 'Raca Sniper Bot - Sniper Bot with surrrounding utilities',
   description: 'Next-level Sniper Bot with surrrounding utilities',
+  keywords: ['web3', 'sniper bot', 'raca'],
 }
 
 export default function RootLayout({
