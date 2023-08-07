@@ -1,5 +1,6 @@
 import './globals.css'
 import './marquee.css'
+import "tw-elements/dist/css/tw-elements.min.css";
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 

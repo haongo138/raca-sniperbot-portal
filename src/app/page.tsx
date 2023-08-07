@@ -1,33 +1,34 @@
 "use client"
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import Image from 'next/image'
 import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, FingerPrintIcon } from '@heroicons/react/24/solid'
+import { StarIcon, ShieldCheckIcon, RocketLaunchIcon, BellAlertIcon, BookOpenIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
     name: 'Private Transactions',
     description: 'Shield your trades, outsmart sandwich attacks.',
     href: '##',
-    icon: IconOne,
+    icon: FingerPrintIcon,
   },
   {
     name: 'Limit Orders',
     description: 'Buy low, sell high. Execute your strategy with precision.',
     href: '##',
-    icon: IconTwo,
+    icon: StarIcon,
   },
   {
     name: 'Early Contract Insights',
     description: 'Test your sales ahead and maximize your selling potential.',
     href: '##',
-    icon: IconThree,
+    icon: ShieldCheckIcon,
   },
   {
     name: 'Copy Trading',
     description: 'Trade like the pros, front-run & replicate their wins.',
     href: '##',
-    icon: IconThree,
+    icon: RocketLaunchIcon,
   },
 ]
 
@@ -35,12 +36,12 @@ const community = [
   {
     name: 'Updates',
     href: '##',
-    icon: IconOne,
+    icon: BellAlertIcon,
   },
   {
     name: 'Blog (Coming Soon)',
     href: '##',
-    icon: IconTwo,
+    icon: BookOpenIcon,
   },
 ]
 
@@ -65,32 +66,12 @@ const socials = [
 function IconOne() {
   return (
     <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+      className="h-6 w-6 text-orange-500"
+      fill="currentColor"
+      viewBox="0 0 24 24">
       <path
-        d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
-        stroke="#FB923C"
-        strokeWidth="2"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
-        stroke="#FDBA74"
-        strokeWidth="2"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
-        stroke="#FDBA74"
-        strokeWidth="2"
-      />
+        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
     </svg>
   )
 }
@@ -98,50 +79,44 @@ function IconOne() {
 function IconTwo() {
   return (
     <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
+      className="h-6 w-6 text-orange-500"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      xmlSpace="preserve"
+      style={{fillRule:"evenodd", clipRule:"evenodd", strokeLineJoin:"round", strokeMiterLimit:"1.41421" } as React.CSSProperties}>
       <path
-        d="M28.0413 20L23.9998 13L19.9585 20M32.0828 27.0001L36.1242 34H28.0415M19.9585 34H11.8755L15.9171 27"
-        stroke="#FB923C"
-        strokeWidth="2"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M18.804 30H29.1963L24.0001 21L18.804 30Z"
-        stroke="#FDBA74"
-        strokeWidth="2"
-      />
+        id="telegram-1"
+        d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z" />
     </svg>
+
   )
 }
 
 function IconThree() {
   return (
     <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="48" height="48" rx="8" fill="#FFEDD5" />
-      <rect x="13" y="32" width="2" height="4" fill="#FDBA74" />
-      <rect x="17" y="28" width="2" height="8" fill="#FDBA74" />
-      <rect x="21" y="24" width="2" height="12" fill="#FDBA74" />
-      <rect x="25" y="20" width="2" height="16" fill="#FDBA74" />
-      <rect x="29" y="16" width="2" height="20" fill="#FB923C" />
-      <rect x="33" y="12" width="2" height="24" fill="#FB923C" />
+      className="h-6 w-6 text-orange-500"
+      fill="currentColor"
+      viewBox="0 0 24 24">
+      <path
+        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
     </svg>
   )
 }
 
 export default function Home() {
+  useEffect(() => {
+    const init = async () => {
+      const { Datepicker, Input, initTE } = await import("tw-elements");
+      initTE({ Datepicker, Input });
+    };
+    init();
+  }, []);
+  
   return (
     <main className="overflow-hidden relative">
       <div className="absolute left-0 z-0 w-full min-h-[80vh] aspect-auto top-[-80px]">
@@ -187,7 +162,7 @@ export default function Home() {
                           className="-m-3 flex items-center rounded-lg p-2 pb-5 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                         >
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                            <item.icon aria-hidden="true" />
+                            <item.icon aria-hidden="true" className="h-6 w-6 text-orange-500" />
                           </div>
                           <div className="ml-4">
                             <p className="text-sm font-medium text-gray-900">
@@ -223,7 +198,7 @@ export default function Home() {
               >
                 <Popover.Panel className="fixed z-9999 mt-8 max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
                   <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div className="relative flex-col gap-8 bg-white p-7 lg:grid-cols-2">
+                    <div className="relative flex-col gap-8 bg-white p-4 lg:grid-cols-2">
                       {community.map((item) => (
                         <a
                           key={item.name}
@@ -231,7 +206,7 @@ export default function Home() {
                           className="-m-3 flex items-center rounded-lg p-2 pb-3 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                         >
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                            <item.icon aria-hidden="true" />
+                            <item.icon aria-hidden="true" className="h-6 w-6 text-orange-500" />
                           </div>
                           <div className="ml-4">
                             <p className="text-sm font-medium text-gray-900">
@@ -269,7 +244,7 @@ export default function Home() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="-m-3 flex items-center rounded-lg p-2 pb-3 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                          className="-m-3 flex items-center rounded-lg p-1 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                         >
                           <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
                             <item.icon aria-hidden="true" />
@@ -290,7 +265,7 @@ export default function Home() {
         </div>
       </nav>
       <div className="flex relative justify-center items-center py-2 space-x-2 w-full text-sm bg-black">
-        <span className="font-semibold text-white">Telegram Sniper Bot - Community Prize</span>
+        <span className="font-semibold text-white">Telegram Community Prize</span>
         <span className="flex items-center py-1 px-3 text-xs font-semibold text-black uppercase rounded-full" style={{ background: "linear-gradient(90deg, #F4C4C2 0%, #EEC3FD 48.96%, #8FC6E4 100%)" }}>
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="mr-1 w-4 iconify iconify--heroicons" width="1em" height="1em" viewBox="0 0 20 20">
             <path fill="currentColor" fill-rule="evenodd" d="M10 1c-1.828 0-3.623.149-5.371.435a.75.75 0 0 0-.629.74v.387c-.827.157-1.642.345-2.445.564a.75.75 0 0 0-.552.698a5 5 0 0 0 4.503 5.152a6 6 0 0 0 2.946 1.822A6.451 6.451 0 0 1 7.768 13H7.5A1.5 1.5 0 0 0 6 14.5V17h-.75C4.56 17 4 17.56 4 18.25c0 .414.336.75.75.75h10.5a.75.75 0 0 0 .75-.75c0-.69-.56-1.25-1.25-1.25H14v-2.5a1.5 1.5 0 0 0-1.5-1.5h-.268a6.453 6.453 0 0 1-.684-2.202a6 6 0 0 0 2.946-1.822a5 5 0 0 0 4.503-5.152a.75.75 0 0 0-.552-.698A31.804 31.804 0 0 0 16 2.562v-.387a.75.75 0 0 0-.629-.74A33.227 33.227 0 0 0 10 1ZM2.525 4.422C3.012 4.3 3.504 4.19 4 4.09V5c0 .74.134 1.448.38 2.103a3.503 3.503 0 0 1-1.855-2.68Zm14.95 0a3.503 3.503 0 0 1-1.854 2.68A5.974 5.974 0 0 0 16 5v-.91c.496.099.988.21 1.475.332Z" clip-rule="evenodd"></path>
@@ -302,13 +277,13 @@ export default function Home() {
           <p className="max-w-xl text-3xl md:text-5xl">Bring <span className="text-[#f17975]">seamless and lightning-fast</span> trading experience to your <span className="text-[#55b0fa]">Telegram</span> playground.</p>
           <span className="mt-5 max-w-xl text-sm md:text-xl">Smooth UI/UX setup for easily management, automated rug detection, detailed early CA insights, etc.</span>
           <div className="flex gap-x-5 items-center mt-10">
-            <button disabled={false} className="flex gap-x-2 items-center rounded-lg px-4 py-2 font-semibold text-white text-mochi bg-discord shadow">
+            {/* <button disabled={false} className="flex gap-x-2 items-center rounded-lg px-4 py-2 font-semibold text-white text-mochi bg-discord shadow">
               <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="w-5 iconify iconify--ic" width="1em" height="1em" viewBox="0 0 24 24" style={{ color: "white" }}>
                 <path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"></path>
               </svg>
               <div>Discord Bot</div>
               <span className="py-0.5 px-2 font-medium text-gray-800 uppercase bg-gray-100 rounded-full text-[10px]">coming soon</span>
-            </button>
+            </button> */}
             <a href="#" target="_blank" rel="noreferrer" className="flex gap-x-2 items-center rounded-lg px-4 py-2 font-semibold text-black bg-white shadow">
               <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className="w-5 iconify iconify--logos" width="1em" height="1em" viewBox="0 0 256 256" style={{ color: "white" }}><defs><linearGradient id="iconifyReact2" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2AABEE"></stop><stop offset="100%" stop-color="#229ED9"></stop></linearGradient></defs><path fill="url(#iconifyReact2)" d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0Z"></path><path fill="#FFF" d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072Z"></path></svg>
               <div className="whitespace-nowrap">Telegram Bot</div>
@@ -382,16 +357,16 @@ export default function Home() {
       </div>
       <div className="px-6 md:px-12 body-block">
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
-          <p className="text-4xl">NFT Ownership = WAGMI</p>
+          <p className="text-4xl font-semibold">NFT Ownership = WAGMI</p>
           <span className="text-xl">Huge rewards are coming for Raca Golden NFT Holders</span>
         </div>
         <div className="flex flex-col gap-y-8 justify-between mt-16 md:flex-row md:gap-y-0 md:mt-32">
           <div className="flex flex-col gap-y-2">
-            <p className="text-xl">Revenue Sharing</p>
+            <p className="text-xl font-semibold">Revenue Sharing</p>
             <span className="text-base">Revenue from transaction fee, NFT sales will weekly be shared & send directly<br />to Golden NFT holder wallets.</span>
           </div>
           <div className="flex flex-col gap-y-2">
-            <p className="text-xl">Advanced Tracking Features</p>
+            <p className="text-xl font-semibold">Advanced Tracking Features</p>
             <span className="text-base">Quick catch up on market movement and you might<br />see some steals in there.</span>
           </div>
         </div>
