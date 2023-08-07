@@ -443,7 +443,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="pt-16 pb-24 mt-auto">
+      <footer className="pt-16 pb-10 mt-auto">
         <div className="px-6 mx-auto max-w-7xl md:px-12">
           <div className="flex flex-wrap">
             <div className="w-full text-sm text-gray-500 md:w-2/5">
