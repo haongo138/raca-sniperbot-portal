@@ -6,38 +6,10 @@ import { ChevronDownIcon, FingerPrintIcon } from '@heroicons/react/24/solid'
 import { StarIcon, ShieldCheckIcon, RocketLaunchIcon, BellAlertIcon, BookOpenIcon } from '@heroicons/react/24/outline'
 import { Variants, motion } from "framer-motion"
 
-const leftFadeInVariants: Variants = {
-  hide: {
-      opacity: 0,
-      x: -500,
-  },
-  show: {
-      opacity: 1,
-      x: 0,
-      transition: {
-          duration: 0.8,
-      },
-  },
-};
-
-const rightFadeInVariants: Variants = {
-  hide: {
-      opacity: 0,
-      x: 500,
-  },
-  show: {
-      opacity: 1,
-      x: 0,
-      transition: {
-          duration: 0.8,
-      },
-  },
-};
-
 const bottomFadeInVariants: Variants = {
   hide: {
       opacity: 0,
-      y: 500  ,
+      y: -600,
   },
   show: {
       opacity: 1,
@@ -324,7 +296,7 @@ export default function Home() {
         initial="hide"
         whileInView="show"
         exit="hide"
-        variants={leftFadeInVariants}
+        variants={bottomFadeInVariants}
       >
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
           <p className="text-4xl">Features</p>
@@ -370,7 +342,7 @@ export default function Home() {
         initial="hide"
         whileInView="show"
         exit="hide"
-        variants={rightFadeInVariants}
+        variants={bottomFadeInVariants}
       >
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
           <p className="text-4xl font-semibold">NFT Ownership = WAGMI</p>
