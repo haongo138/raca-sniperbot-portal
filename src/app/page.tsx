@@ -7,8 +7,8 @@ import { StarIcon, ShieldCheckIcon, RocketLaunchIcon, BellAlertIcon, BookOpenIco
 
 export default function Home() {
   const CONTRACT = process.env.CONTRACT ?? "0x0000000"
-  const TWITTER = process.env.TWITTER ?? "##"
-  const TELEGRAM = process.env.TELEGRAM ?? "##"
+  const TWITTER = process.env.TWITTER ?? "https://twitter.com/racasniperbot"
+  const TELEGRAM = process.env.TELEGRAM ?? "https://t.me/racasniperbot"
   const BOT_LINK = process.env.BOT ?? "##"
   const BUY_LINK = "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=" + CONTRACT + "&chain=mainnet"
   
