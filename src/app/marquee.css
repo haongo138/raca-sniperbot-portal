@@ -43,7 +43,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* animation: scroll var(--duration) linear var(--delay) var(--iteration-count); */
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
   animation-play-state: var(--play);
   animation-delay: var(--delay);
   animation-direction: var(--direction);

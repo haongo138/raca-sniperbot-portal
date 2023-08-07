@@ -327,20 +327,20 @@ export default function Home() {
       <div className="flex flex-col mt-32 lg:mt-5">
         <p className="mx-auto mb-2 text-3xl text-mochi">Integrated Chains</p>
         <div className="flex overflow-hidden py-3 w-20 h-20 marquee-container">
-          <div className="overlay"></div>
-          <div className="marquee">
+          <div className="overlay" style={{"--gradient-color": "rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)", "--gradient-width": "200px"} as React.CSSProperties}></div>
+          <div className="marquee" style={{"--play": "running", "--direction": "reverse", "--duration": "20s", "--delay": "0s", "--iteration-count": "infinite"} as React.CSSProperties}>
             <img className="h-full duration-100 ease-in-out mx-7 md:mx-10" src="/media/eth.png" alt="eth-logo" style={{ transitionProperty: "filter" }} />
             <img className="h-full duration-100 ease-in-out mx-7 md:mx-10" src="/media/arbitrum.png" alt="arbitrum-logo" style={{ transitionProperty: "filter" }} />
             <img className="h-full duration-100 ease-in-out mx-7 md:mx-10" src="/media/bsc.png" alt="bsc-logo" style={{ transitionProperty: "filter" }} />
           </div>
-          <div className="marquee" aria-hidden="true">
+          <div className="marquee" aria-hidden="true" style={{"--play": "running", "--direction": "reverse", "--duration": "20s", "--delay": "0s", "--iteration-count": "infinite"} as React.CSSProperties}>
             <img className="h-full duration-100 ease-in-out mx-7 md:mx-10" src="/media/eth.png" alt="eth-logo" style={{ transitionProperty: "filter" }} />
             <img className="h-full duration-100 ease-in-out mx-7 md:mx-10" src="/media/arbitrum.png" alt="arbitrum-logo" style={{ transitionProperty: "filter" }} />
             <img className="h-full duration-100 ease-in-out mx-7 md:mx-10" src="/media/bsc.png" alt="bsc-logo" style={{ transitionProperty: "filter" }} />
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-6 md:px-12 body-block">
+      <div className="flex flex-col px-6 md:px-12 body-block delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
           <p className="text-4xl">Features</p>
           <span className="text-xl">Our trading bot has a comprehensive suite of features designed to help you win. All free-to-use.</span>

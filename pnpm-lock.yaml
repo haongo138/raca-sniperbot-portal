@@ -47,6 +47,9 @@ dependencies:
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
+  taos:
+    specifier: ^1.0.5
+    version: 1.0.5
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -2555,6 +2558,10 @@ packages:
       sucrase: 3.34.0
     transitivePeerDependencies:
       - ts-node
+    dev: false
+
+  /taos@1.0.5:
+    resolution: {integrity: sha512-JSwR+ldec2dSjOnssN/VGjXSR44DbzUVeAXRDVEuMsc7xndx8ePcQ4QMAMUAL5V4KN1wlmhumyQ7aSykDf8uhw==}
     dev: false
 
   /tapable@2.2.1:
