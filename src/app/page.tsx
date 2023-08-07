@@ -111,11 +111,11 @@ function IconThree() {
 export default function Home() {
   useEffect(() => {
     const init = async () => {
-      const { Datepicker, Input, initTE } = await import("tw-elements");
-      initTE({ Datepicker, Input });
-    };
-    init();
-  }, []);
+      const { Datepicker, Input, initTE } = await import("tw-elements")
+      initTE({ Datepicker, Input })
+    }
+    init()
+  }, [])
   
   return (
     <main className="overflow-hidden relative">
@@ -315,7 +315,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-6 md:px-12 body-block delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0">
+      <div className="flex flex-col px-6 md:px-12 body-block">
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
           <p className="text-4xl">Features</p>
           <span className="text-xl">Our trading bot has a comprehensive suite of features designed to help you win. All free-to-use.</span>
