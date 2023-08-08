@@ -276,7 +276,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col mt-32 lg:mt-5">
-        <p className="mx-auto mb-2 text-3xl text-mochi">Integrated Chains</p>
+        <p className="mx-auto mb-2 text-3xl text-mochi font-semibold">Integrated Chains</p>
         <div className="flex overflow-hidden py-3 w-20 h-20 marquee-container">
           <div className="overlay" style={{ "--gradient-color": "rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)", "--gradient-width": "200px" } as React.CSSProperties}></div>
           <div className="marquee" style={{ "--play": "running", "--direction": "reverse", "--duration": "20s", "--delay": "0s", "--iteration-count": "infinite" } as React.CSSProperties}>
@@ -299,7 +299,7 @@ export default function Home() {
         variants={bottomFadeInVariants}
       >
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
-          <p className="text-4xl">Features</p>
+          <p className="text-4xl font-semibold text-mochi">Features</p>
           <span className="text-xl">Our trading bot has a comprehensive suite of features designed to help you win. All free-to-use.</span>
         </div>
         <div className="grid grid-cols-1 grid-rows-4 gap-6 mt-10 md:grid-cols-2 md:grid-rows-2">
@@ -345,22 +345,28 @@ export default function Home() {
         variants={bottomFadeInVariants}
       >
         <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
-          <p className="text-4xl font-semibold">NFT Ownership = WAGMI</p>
-          <span className="text-base">Huge rewards are coming for Raca Golden NFT Holders</span>
+          <p className="text-4xl font-semibold text-mochi">Roadmap</p>
+          {/* <span className="text-base">Huge rewards are coming for Raca Golden NFT Holders</span> */}
         </div>
-        <div className="flex flex-col gap-y-8 justify-between mt-10 md:flex-row md:gap-y-0 md:mt-20">
-          <div className="flex flex-col gap-y-2">
-            <p className="text-xl font-semibold">Revenue Sharing</p>
-            <span className="text-base">Revenue from transaction fee, NFT sales will weekly be shared & send directly<br />to Golden NFT holder wallets.</span>
-          </div>
-          <div className="flex flex-col gap-y-2">
-            <p className="text-xl font-semibold">Advanced Tracking Features</p>
-            <span className="text-base">Quick catch up on market movement and you might<br />see some steals in there.</span>
-          </div>
+        <div className="flex flex-col gap-y-2 border-2 p-5 mt-5 rounded-lg">
+            <p className="text-xl font-semibold text-mochi">Q2/2023</p>
+            <span className="text-base">• Research & Development<br/>• Capital Fundraising Campaign<br/>• Team Engagement<br/><br/></span>
         </div>
-        <div className="mt-10">
+        <div className="flex flex-col gap-y-2 border-2 p-5 mt-5 rounded-lg">
+          <p className="text-xl font-semibold text-mochi">Q3/2023</p>
+          <span className="text-base">• Friendly UI Design<br/>• Website Official Launch<br/>• ERC20 Implementation <br/>• Launch on Uniswap<br/></span>
+        </div>
+        <div className="flex flex-col gap-y-2 border-2 p-5 mt-5 rounded-lg">
+          <p className="text-xl font-semibold text-mochi">Q4/2023</p>
+          <span className="text-base">• Customized User Experience<br/>• Smart Gas Delta Handling <br/>• Enhanced Bot Efficiency<br/>• Anti-Scam Integration<br/>• Major CEXs listing</span>
+        </div>
+        <div className="flex flex-col gap-y-2 border-2 p-5 mt-5 rounded-lg">
+          <p className="text-xl font-semibold text-mochi">Q1/2024</p>
+          <span className="text-base">• Predictive Analysis<br/>• Real-time Market Scanning<br/>• Cross-chain Development<br/>• Optimized Gas Fee and Slippage<br/>• Platform Bot Integration (X, Threads, Facebook, etc.)</span>
+        </div>
+        {/* <div className="mt-10">
           <Image src="/media/nft-rarity-ranking.jpg" alt="" loading="lazy" width="2048" height="1025" decoding="async" style={{ color: "transparent" }} />
-        </div>
+        </div> */}
       </motion.div>
       <motion.div 
         className="flex flex-col mt-20"
@@ -369,7 +375,7 @@ export default function Home() {
         exit="hide"
         variants={bottomFadeInVariants}
       >
-        <p className="mx-auto mb-2 text-3xl text-mochi">Community Expectation</p>
+        <p className="mx-auto mb-2 text-4xl text-mochi font-semibold">Community Expectation</p>
         <div className="body-block px-6 md:px-12">
           <div className="relative bg-white rounded-xl shadow-md">
             <div className="relative p-9 lg:p-12">

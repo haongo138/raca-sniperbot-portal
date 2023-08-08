@@ -123,3 +123,18 @@ body {
 .shadow,.shadow-full {
   box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
 }
+
+.text-mochi,.text-mochi-500 {
+  --tw-text-opacity: 1;
+  color: rgb(232 139 136/var(--tw-text-opacity))
+}
+
+.text-mochi-600 {
+  --tw-text-opacity: 1;
+  color: rgb(228 118 115/var(--tw-text-opacity))
+}
+
+.text-mochi-900 {
+  --tw-text-opacity: 1;
+  color: rgb(215 56 51/var(--tw-text-opacity))
+}
