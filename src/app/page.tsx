@@ -298,7 +298,7 @@ export default function Home() {
         exit="hide"
         variants={bottomFadeInVariants}
       >
-        <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
+        <div className="flex flex-col gap-y-2 mx-auto mt-36 items-center">
           <p className="text-4xl font-semibold text-mochi">Features</p>
           <span className="text-xl">Our trading bot has a comprehensive suite of features designed to help you win. All free-to-use.</span>
         </div>
@@ -344,7 +344,7 @@ export default function Home() {
         exit="hide"
         variants={bottomFadeInVariants}
       >
-        <div className="flex flex-col gap-y-2 items-start mx-auto mt-36 md:items-center">
+        <div className="flex flex-col gap-y-2 mx-auto mt-36 items-center">
           <p className="text-4xl font-semibold text-mochi">Roadmap</p>
           {/* <span className="text-base">Huge rewards are coming for Raca Golden NFT Holders</span> */}
         </div>
@@ -401,7 +401,7 @@ export default function Home() {
         <div className="px-6 md:px-12 body-block">
           <div style={{ backgroundImage: "url(/dot-bg.png), linear-gradient(90deg, #FCBCC8 0%, #D3A7F3 100%)", backgroundSize: "cover", backgroundBlendMode: "overlay", height: "300px" }} className="flex relative flex-col justify-center items-center p-10 rounded-lg">
             <p className="text-lg text-center md:text-3xl">Boost up your wealth. For Free ✨✨</p>
-            <a href={BUY_LINK} target="_blank" rel="noreferrer" className="flex gap-x-2 items-center rounded-lg px-2 py-2 font-semibold text-mochi bg-white mt-3">
+            <a href={BUY_LINK} target="_blank" rel="noreferrer" className="flex gap-x-2 items-center rounded-lg px-2 py-2 font-semibold bg-white mt-3">
               <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 168.3 193.8" style={{ enableBackground: "new 0 0 168.3 193.8" } as React.CSSProperties} xmlSpace="preserve">
                 <path className="st0" d="M66,44.1c-2.1-0.3-2.2-0.4-1.2-0.5c1.9-0.3,6.3,0.1,9.4,0.8c7.2,1.7,13.7,6.1,20.6,13.8l1.8,2.1l2.6-0.4  c11.1-1.8,22.5-0.4,32,4c2.6,1.2,6.7,3.6,7.2,4.2c0.2,0.2,0.5,1.5,0.7,2.8c0.7,4.7,0.4,8.2-1.1,10.9c-0.8,1.5-0.8,1.9-0.3,3.2  c0.4,1,1.6,1.7,2.7,1.7c2.4,0,4.9-3.8,6.1-9.1l0.5-2.1l0.9,1c5.1,5.7,9.1,13.6,9.7,19.2l0.2,1.5l-0.9-1.3c-1.5-2.3-2.9-3.8-4.8-5.1  c-3.4-2.3-7-3-16.5-3.5c-8.6-0.5-13.5-1.2-18.3-2.8c-8.2-2.7-12.4-6.2-22.1-19.1c-4.3-5.7-7-8.8-9.7-11.4  C79.6,48.3,73.7,45.3,66,44.1z" />
                 <path className="st0" d="M140.5,56.8c0.2-3.8,0.7-6.3,1.8-8.6c0.4-0.9,0.8-1.7,0.9-1.7c0.1,0-0.1,0.7-0.4,1.5c-0.8,2.2-0.9,5.3-0.4,8.8  c0.7,4.5,1,5.1,5.8,10c2.2,2.3,4.8,5.2,5.8,6.4l1.7,2.2l-1.7-1.6c-2.1-2-6.9-5.8-8-6.3c-0.7-0.4-0.8-0.4-1.3,0.1  c-0.4,0.4-0.5,1-0.5,3.9c-0.1,4.5-0.7,7.3-2.2,10.2c-0.8,1.5-0.9,1.2-0.2-0.5c0.5-1.3,0.6-1.9,0.6-6.2c0-8.7-1-10.8-7.1-14.3  c-1.5-0.9-4.1-2.2-5.6-2.9c-1.6-0.7-2.8-1.3-2.7-1.3c0.2-0.2,6.1,1.5,8.4,2.5c3.5,1.4,4.1,1.5,4.5,1.4  C140.2,60.1,140.4,59.3,140.5,56.8z" />
