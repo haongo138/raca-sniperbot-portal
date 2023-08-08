@@ -21,7 +21,7 @@ const bottomFadeInVariants: Variants = {
 };
 
 export default function Home() {
-  const CONTRACT = process.env.CONTRACT ?? "0x0000000"
+  const CONTRACT = process.env.CONTRACT ?? "0xe9731e689AB89cCCcc01b1a01712c4F82Ad9FFC8"
   const TWITTER = process.env.TWITTER ?? "https://twitter.com/racasniperbot"
   const TELEGRAM = process.env.TELEGRAM ?? "https://t.me/racasniperbot"
   const BOT_LINK = process.env.BOT ?? "https://t.me/RacaSniper_Bot"
